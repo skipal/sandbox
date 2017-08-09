@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(int arg, char *args[])
+
+int FuncPrint()
 {
     int loop = 0;
 
@@ -10,7 +11,12 @@ int main(int arg, char *args[])
     {
         printf("[%d]:[%s]\n",loop, args[loop]);
     }
-
-
+    
     return 0;
+}
+
+
+int main(int arg, char *args[])
+{
+    return FuncPrint();
 }
